@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/Fonts/hatton-font-family.zip">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,39 +11,162 @@
   <link href="" rel="stylesheet">
   <title>MUSIC DEAL</title>
   <link rel="stylesheet" href="../style/header.css">
+  <link rel="stylesheet" href="../style/index.css">
+  <link rel="stylesheet" href="../style/animations.css">
 </head>
 
 <body>
-  <header class="d-flex flex-wrap align-items-center justify-content-between">
-    <div class="col-md-3 mb-2 mb-md-0">
-      <a class="d-inline-flex link-body-emphasis text-decoration-none">
-        <img class="bi" role="img" aria-label="Bootstrap" src="../assets/img/Logo.jpeg" alt="Logo"></img>
+  <header class="navbar navbar-expand-lg navbar-dark slide-in-elliptic-top-fwd">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="bi" role="img" aria-label="Bootstrap" src="../assets/img/Logo.jpeg" alt="Logo">
       </a>
-    </div>
-    <div class="nav-container">
-      <ul class="nav">
-        <li><a href="#" class="nav-link">Solista</a></li>
-        <li><a href="#" class="nav-link">Grupo</a></li>
-        <li><a id="principal" href="#" class="nav-link">MUSIC DEAL</a></li>
-        <li><a href="#" class="nav-link">Negocio</a></li>
-        <li><a href="#" class="nav-link">About</a></li>
-      </ul>
-    </div>
-    <div id="buttons" class="col-md-3 text-end">
-      <button id="login" type="button" class="btn">Login</button>
-      <button id="signup" type="button" class="btn">Sign up</button>
-
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Solista</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Grupo</a>
+          </li>
+          <li class="nav-item">
+            <a id="principal" class="nav-link" href="#">MUSIC DEAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Negocio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+      <div id="buttons" class="d-flex">
+        <button id="login" type="button" class="btn wobble-hor-bottom">Iniciar Sesión</button>
+        <button id="signup" type="button" class="btn">Crear Cuenta</button>
+      </div>
     </div>
   </header>
 
 
+  <!-- No Borrar -->
+
+  <!-- <div class="row flex-lg-row-reverse align-items-center g-5 py-5 position-relative p-md-5 bg-body-tertiary">
+    <div class="col-12 col-sm-8 col-lg-6">
+      <img id="title_image" src="../assets/img/bar_ejemplo.jpg" class="d-block mx-auto img-fluid scale-in-center" alt="Bar Ejemplo" loading="lazy">
+    </div>
+    <div class="col-lg-6 text-left">
+      <h1 class="main_title display-3 fw-bold">Designed for engineers</h1>
+      <p class="Main_subtitle">Ofrecemos una amplia variedad de músicos solistas y grupos musicales de diversos géneros
+        y estilos. Ya sea para bodas, fiestas corporativas, eventos privados o cualquier ocasión especial, garantizamos
+        actuaciones de alta calidad que crearán el ambiente perfecto.</p>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div> -->
+  
 
 
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/src/assets/img/Logo.png" alt="" width="200" height="200">
+    <h1 class="main_title display-5 fw-bold text-body-emphasis">Centered hero</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="Main_subtitle mb-5">Ofrecemos una amplia variedad de músicos solistas y grupos musicales de diversos géneros
+        y estilos. Ya sea para bodas, fiestas corporativas, eventos privados o cualquier ocasión especial, garantizamos
+        actuaciones de alta calidad que crearán el ambiente perfecto.</p>
+    </div>
+    <div>
+      <a href="#myCarousel"><img id="img_flecha" src="/src/assets/img/felch.png" alt="" class="bounce-top"></a>
+    </div>    
+  </div>
+
+  
+  
+
+
+
+
+
+
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption">
+            <div class="carousel-content">
+              <div class="carousel-content-text">
+                <h1>Example headline.</h1>
+                <p class="opacity-75">Texto de prueba</p>
+              </div>
+              <div class="carousel-content-image">
+                <img src="../assets/img/bar_ejemplo.jpg" alt="Bar Ejemplo">
+                <p><a class="btn" href="#">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="carousel-caption">
+            <div class="carousel-content">
+              <div class="carousel-content-text">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+              </div>
+              <div class="carousel-content-image">
+                <img src="../assets/img/bar_ejemplo.jpg" alt="Bar Ejemplo">
+                <p><a class="btn" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption">
+            <div class="carousel-content">
+              <div class="carousel-content-text">
+                <h1>One more for good measure.</h1>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+              </div>
+              <div class="carousel-content-image">
+                <img src="../assets/img/bar_ejemplo.jpg" alt="Bar Ejemplo">
+                <p><a class="btn" href="#">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+        aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div> 
+  
+</body>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+  <script src="../js/main.js"></script>
+  
 
 </html>

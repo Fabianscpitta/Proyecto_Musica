@@ -21,14 +21,16 @@ header {
 }
 
 #login {
-    border: solid #5934e1 2px;  
+    border: solid #5934e1 2px;
     color: white;
     margin-right: 8px;
+    transition: all 0.3s;
 }
 
 #signup {
     background-color: #5934e1;
     color: white;
+    transition: all 0.3s;
 }
 
 #login:hover {
@@ -36,6 +38,7 @@ header {
     border-color: transparent;
     color: white;
 }
+
 #signup:hover {
     background-color: transparent;
     border-color: #5934e1;
@@ -75,21 +78,58 @@ header {
     transform-origin: bottom left;
 }
 
-.nav {
-    align-items: center;
+.navbar-nav {
     display: flex;
-    justify-content: space-between;
-    width: 100vh;
+    align-items: center;
+    height: 100%;
+    
+    
 }
 
-.nav-link {
+.navbar-nav .nav-item .nav-link {
     color: white;
     text-align: center;
-    flex: 1;
+    margin: 10px;
+    transition: all 0.3s;
 }
 
-.nav-container {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
+.navbar-nav .nav-item .nav-link:hover {
+    color: #5934e1;
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 2px;
+    background-color: #5934e1;
+    transition: all 0.3s;
+    transform: scaleX(0);
+    transform-origin: bottom left right;
+    
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.btn_masinfo{
+    background: none;
+    border: none;
+    
+}
+
+
+.btn_masinfo:hover{
+    background: none;
+    border: none;
+    color:#5934e1;
+}
+.collapse{
+    margin-left: 160px;
 }
